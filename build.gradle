@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.iterasys'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
+}
+
+
+test {
+    useTestNG()
+}
