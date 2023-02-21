@@ -39,7 +39,7 @@ public class seleniumSimple {
 
         driver.findElement(By.id("btn_form_search")).click();
         assertEquals(driver.findElement(By.cssSelector("h3")).getText(), "Cursos > \"mantis\"");
-
+        driver.quit();
 
     }
 }
